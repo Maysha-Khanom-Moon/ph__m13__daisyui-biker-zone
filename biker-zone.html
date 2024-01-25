@@ -7,12 +7,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body class="px-44">
-    <header class="bg-[#264653]">
+<body>
+    <header class="bg-[#264653] px-44 pt-10 font-poppins">
         <div class="navbar justify-end">
             <div class="flex-none">
-              <ul class="menu menu-horizontal px-1">
+              <ul class="menu menu-horizontal px-1 text-base font-normal text-white">
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
                 <li><a>News</a></li>
@@ -20,7 +30,7 @@
               </ul>
             </div>
 
-            <button class="ml-16 btn btn-error">Login</button>
+            <button class="ml-16 px-6 py-2 btn btn-error text-white font-medium">Login</button>
           </div>
     </header>
 
