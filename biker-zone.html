@@ -18,7 +18,11 @@
           theme: {
             extend: {
               colors: {
-                primary_color: '#264653',
+                // without '' amra '-' use korte parbo nah
+                primary_color: '#E76F51',
+                'secondary-color': '#e76f511a',
+
+
               }
             }
           }
@@ -33,11 +37,12 @@
     </style>
 </head>
 <body class="font-poppins">
-    <header class="mt-2 ml-3 md:mt-10 md:mx-40">
+    <header class="mt-2 ml-3 md:mt-5 md:mx-7 lg:mt-10 lg:mx-40">
+      <!-- navbar -->
       <nav>
         <div class="navbar bg-base-100">
           <div class="flex-none">
-            <button class=" md:hidden btn btn-square btn-ghost">
+            <button title="Menu-bar" class=" md:hidden btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
           </div>
@@ -52,15 +57,111 @@
               <li>Contact</li>
             </ul>
 
-            <button class="px-12 btn rounded-md btn-error">Login</button>
+            <button class="px-12 text-white bg-primary_color btn rounded-md btn-error">Login</button>
           </div>
         </div>
       </nav>
 
-      
+      <!-- slider -->
+      <div class="bg-secondary-color">
+        <div class="carousel w-full lg:h-[550px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="grid justify-center lg:flex lg:items-center lg:justify-normal">
+              <div class="p-8 md:p-16 lg:p-28 grid gap-y-5 w-full lg:w-3/5">
+                <h1 class="text-6xl font-bold">
+                  Ride-on R15 V4 with Smile
+                </h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco 
+  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <div>
+                  <button class="px-12 text-white bg-primary_color btn rounded-md btn-error">Purchase</button>
+                </div>
+              </div>
+              <div class="flex justify-center lg:flex">
+                <img alt ="images/slider/bike1.png"/>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="grid justify-center lg:flex lg:items-center lg:justify-normal">
+              <div class="p-8 md:p-16 lg:p-28 grid gap-y-5 w-full lg:w-3/5">
+                <h1 class="text-6xl font-bold">
+                  Ride-on R15 V4 with Smile
+                </h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco 
+  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <div>
+                  <button class="px-12 text-white bg-primary_color btn rounded-md btn-error">Purchase</button>
+                </div>
+              </div>
+              <div class="flex justify-center lg:flex">
+                <img alt="" src="images/slider/bike2.png"/>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="grid justify-center lg:flex lg:items-center lg:justify-normal">
+              <div class="p-8 md:p-16 lg:p-28 grid gap-y-5 w-full lg:w-3/5">
+                <h1 class="text-6xl font-bold">
+                  Ride-on R15 V4 with Smile
+                </h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco 
+  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <div>
+                  <button class="px-12 text-white bg-primary_color btn rounded-md btn-error">Purchase</button>
+                </div>
+              </div>
+              <div class="flex justify-center lg:flex">
+                <img alt="" src="images/slider/bike3.png"/>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="grid justify-center lg:flex lg:items-center lg:justify-normal">
+              <div class="p-8 md:p-16 lg:p-28 grid gap-y-5 w-full lg:w-3/5">
+                <h1 class="text-6xl font-bold">
+                  Ride-on R15 V4 with Smile
+                </h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco 
+  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <div>
+                  <button class="px-12 text-white bg-primary_color btn rounded-md btn-error">Purchase</button>
+                </div>
+              </div>
+              <div class="flex justify-center lg:flex">
+                <img alt="" src="images/slider/bike4.png"/>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
+    <main  class="mt-2 ml-3 md:mt-5 md:mx-7 lg:mt-10 lg:mx-40">
 
     </main>
 
